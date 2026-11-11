@@ -1,0 +1,21 @@
+INFOFELIX — VERSÃO GITHUB PAGES + PAGES CMS
+
+1. Descompacte este ZIP.
+2. Entre em https://github.com/messiasfelix/infofelix
+3. Clique Add file > Upload files.
+4. Arraste TODOS os arquivos e pastas DE DENTRO da pasta InfoFelix-GitHub.
+   O arquivo index.html e .pages.yml devem aparecer na RAIZ do repositório.
+   Não envie o ZIP inteiro: envie os arquivos extraídos.
+5. Clique Commit changes.
+6. O site público ficará em https://messiasfelix.github.io/infofelix/
+7. Abra https://app.pagescms.org/ e escolha o repositório infofelix.
+8. Use a coleção "Anotações, cursos e diagnósticos" para editar dados/conteudos.json.
+9. Ao salvar no CMS, a alteração é escrita no GitHub; recarregue o site público.
+
+ATENÇÃO:
+- Imagens incluídas: recortes de ilustrações fotorealistas criadas para o mockup, não fotografias documentais de peças reais.
+- O site funciona offline com as 9 anotações de demonstração. No GitHub Pages, lê automaticamente dados/conteudos.json.
+- Para adicionar uma anotação no CMS, use um ID diferente em cada registro e escolha uma categoria existente.
+- Os textos de demonstração não substituem manuais e esquemas técnicos.
+- O campo conteudo usa HTML básico, como <h2>, <p>, <ul> e <li>.
+- GitHub Pages é público. Não inclua informações privadas no repositório.
