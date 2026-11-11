@@ -1,0 +1,77 @@
+
+media:
+  input: imagens
+  output: /infofelix/imagens
+  rename: safe
+
+content:
+  - name: anotacoes
+    label: Anotações, cursos e diagnósticos
+    type: file
+    path: dados/conteudos.json
+    format: json
+    list: true
+    fields:
+      - name: id
+        label: Identificador
+        type: string
+        required: true
+        description: Use letras minúsculas e hífens, sem espaços.
+
+      - name: titulo
+        label: Título
+        type: string
+        required: true
+
+      - name: categoria
+        label: Categoria
+        type: select
+        required: true
+        options:
+          values:
+            - name: fundamentos
+              label: Fundamentos
+            - name: componentes
+              label: Componentes
+            - name: cursos
+              label: Cursos
+            - name: diagnosticos
+              label: Diagnósticos
+            - name: esquemas
+              label: Esquemas elétricos
+            - name: ferramentas
+              label: Ferramentas
+
+      - name: resumo
+        label: Resumo
+        type: text
+
+      - name: imagem
+        label: Imagem
+        type: image
+
+      - name: data
+        label: Data
+        type: date
+
+      - name: tipo
+        label: Tipo
+        type: select
+        options:
+          values:
+            - name: anotacao
+              label: Anotação
+            - name: aula
+              label: Aula
+            - name: diagnostico
+              label: Diagnóstico
+
+      - name: status
+        label: Status
+        type: string
+
+      - name: conteudo
+        label: Conteúdo da anotação
+        type: rich-text
+        options:
+          format: html
